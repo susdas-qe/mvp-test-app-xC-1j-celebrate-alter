@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-ylkg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/mvp-dev-dxau-tenant/mvp-test-app/test-mvp-component-ylkg@sha256:f391aca4619eae7a467330c8543283d7b84ed5acb547dc6f0695864e0812588d
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
